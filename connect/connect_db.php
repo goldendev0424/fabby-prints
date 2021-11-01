@@ -1,11 +1,13 @@
-<?
+<?php
 $dbHost = "localhost";
-$dbUser = "fabbypr_adm1n";
-$dbPass = "fab12D1amonds!*!";
+$dbUser = "root";
+$dbPass = "";
+// $dbUser = "fabbypr_adm1n";
+// $dbPass = "fab12D1amonds!*!";
 $dbName = "fp_prints_db";
 
 function dbconnect() {
-    	
+
 	global $dbHost;
 	global $dbUser;
 	global $dbPass;
@@ -16,7 +18,7 @@ function dbconnect() {
     @mysql_select_db($dbName);
 
     // If connection failed... **** MAYBE CARRIED OUT IN THE CALLER SCRIPT ****
-    if (!$link) {        
+    if (!$link) {
         echo "Couldn't connect to database server";
     }
     
@@ -24,4 +26,3 @@ function dbconnect() {
 }
 
 
-?>
