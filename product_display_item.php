@@ -261,13 +261,13 @@ width:90%;
 
 <div class="full-width-container content-centre">
 <div class="content-a">
-	<img src='img_cat/<? echo $item_code; ?>.jpg' style="border: 1px solid #000;">
+	<img src='img_cat/<?php echo $item_code; ?>.jpg' style="border: 1px solid #000;">
 </div>
   
   
   <div class="content-b">
-  <? echo "<p>$item_name</p>"; ?>
-  	<? echo "<p>$item_description</p>"; ?>
+  <?php echo "<p>$item_name</p>"; ?>
+  	<?php echo "<p>$item_description</p>"; ?>
 	
 	<br>
 <br>
