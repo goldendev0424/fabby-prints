@@ -28,6 +28,7 @@
   }
 
   function displayList() {
+    $('.visited-list').html('');
     visitedPosters.forEach(function(vp) {
       drawVisited(vp);
     });

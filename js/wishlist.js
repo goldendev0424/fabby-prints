@@ -2,9 +2,8 @@
   var selectedTab = window.gSelectedTab;
   var postersArr = window.gPostersArr;
   var heartsArr = [];
-  var heartsCount = 0;
   var storageKey = 'fabby_posters_wishlist';
-  window.gHeartsCount = heartsCount;
+  window.gHeartsCount = 0;
 
   $(document).ready(function () {
     init();
@@ -17,7 +16,7 @@
 
   function init() {
     heartsArr = getCookie(storageKey);
-    heartsCount = heartsArr.length;
+    window.gHeartsCount = heartsArr.length;
     displayHeartsList();
   }
 
@@ -46,7 +45,7 @@
   }
 
   function addToHeart(heart) {
-    heartsCount += 1;
+    window.gHeartsCount += 1;
     displayheartsCount();
 
     var elems = $(`[data-id=${heart.id}]`);
@@ -58,7 +57,7 @@
   }
 
   function removeFromHeart(id) {
-    heartsCount -= 1;
+    window.gHeartsCount -= 1;
     displayheartsCount();
 
     var elems = $(`[data-id=${id}]`);
@@ -83,9 +82,9 @@
   }
   
   function displayheartsCount() {
-    $('.wishlist-count').text(heartsCount);
+    $('.wishlist-count').text(window.gHeartsCount);
     $('.modal-content').removeClass('empty');
-    if (heartsCount < 1) {
+    if (window.gHeartsCount < 1) {
       disableHeart('.btn-open-wishlist-modal, #btn_favo_wishlist_modal');
 
       $('#btn_favo_wishlist_modal').find('.wishlist-count').text('');

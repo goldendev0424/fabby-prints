@@ -60,7 +60,9 @@ while($x < $item_list)
 	$x=0;
       while($x < $item_list)
       {
-	  $img = '"./img_cat/' . $item_code[$x] . '.jpg"';
+	  // $img = '"./img/' . $item_code[$x] . '.jpg"';
+    $i = ($x%2) + 1;
+    $img = '"./img/' . $i . ($i === 1 ? '.jpeg"' : '.png"');
 	  $name = json_encode($item_name[$x]);
       echo "{ id: $item_code[$x], img: $img, name: $name, price: '$item_price[$x]' },";
       
@@ -224,9 +226,12 @@ echo $category_name;
 	$x=0;
 	while($x < $item_list)
 		{			
+      
+    $i = ($x%2) + 1;
+    $img = './img/' . $i . ($i === 1 ? '.jpeg' : '.png');
     echo "<div class='image-frame'>
 		  <div class='content'>
-        <a href='product_display_item.php?ic=$item_code[$x]'><img src='img_cat/$item_code[$x].jpg'></a>
+        <a href='product_display_item.php?ic=$item_code[$x]'><img src='$img'></a>
       </div>
 		  <div class='info'>
         <div class='info-text'>

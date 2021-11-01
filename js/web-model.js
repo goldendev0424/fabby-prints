@@ -1,6 +1,5 @@
 (function () {
   var selectedTab = '';
-  var heartsCount = window.gHeartsCount;
 
   var swiper = null;
   var swiperOpt = {
@@ -148,15 +147,14 @@
       $('.visited-list').css('display', 'flex');
       return;
     }
-
-    if (tabName === 'favo' && heartsCount > 0) {
+    if (tabName === 'favo' && window.gHeartsCount > 0) {
       $('.wishlist').css('display', 'flex');
       $('.modal-footer').css('display', 'flex');
       $('.visited-list').hide();
       return;
     }
 
-    if (heartsCount < 1) {
+    if (window.gHeartsCount < 1) {
       $('#wishlist_modal .modal-body').addClass('empty');
       $('.empty-wishlist').css('display', 'flex');
       $('.modal-content').addClass('empty');
