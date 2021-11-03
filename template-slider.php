@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/template.css">
 
   <style>
     .container {
@@ -45,14 +46,21 @@
       right: 0;
     }
 
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+
     .image-frame {
-      margin: 0.5em;
+      margin: 0.5em 1em;
+      
     }
 
     .image-frame img {
       border: 0.2em solid #000;
       padding: 1em;
       margin-bottom: 0.5em;
+      width: 100%;
     }
 
     .image-wishlist {
@@ -82,64 +90,112 @@
   <!-- slick slider -->
   <div class="container">
     <div class="slider">
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/100.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name1</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name1</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/101.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name2</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/101.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name2</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/102.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name3</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/102.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name3</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/103.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name4</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/103.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name4</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/100.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name5</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name5</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/100.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name6</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name6</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/100.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name7</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name7</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
 
-      <div class='image-frame'>
-        <a href='#'><img src='BackUp-B4_D/work3/assets/img/100.jpg'></a>
-        <div class='image-wishlist'><a class='toggle-wishlist' data-id='$favs_json_id[$x]' href='#' title='Add to Wish List'><i class='far fa-heart'></i></a></div>
-        <p>Name8</p>
-        <p>Price</p>
+      <div class="image-frame">
+        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="info">
+          <div class="info-text">
+            <p class="info-title">Name8</p>
+            <p>Price</p>
+          </div>
+          <div class="image-wishlist">
+            <a class="toggle-wishlist" data-id="$favs_json_id[$x]" href="#" title="Add to Wish List"><i class="far fa-heart"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="slick-button-prev slick-prev"><i class='fa fa-chevron-left' aria-hidden='true'></i></div>
-    <div class="slick-button-next slick-next"><i class='fa fa-chevron-right' aria-hidden='true'></i></div>
+    <div class="slick-button-prev slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+    <div class="slick-button-next slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
   </div>
   <!-- End slick slider -->
 
