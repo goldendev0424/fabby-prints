@@ -1,39 +1,6 @@
 (function () {
   var selectedTab = '';
 
-  var swiper = null;
-  var swiperOpt = {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    freeMode: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 10
-      },
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      850: {
-        slidesPerView: 4,
-        spaceBetween: 30
-      }
-    },
-    on: {
-      init: function () {
-        checkSwiperArrow();
-      },
-      resize: function () {
-        checkSwiperArrow();
-      }
-    }
-  };
-
   window.gSelectedTab = selectedTab;
   $(document).ready(function () {
     init();
@@ -80,29 +47,36 @@
   });
 
   function init() {
-    swiper = new Swiper('.swiper-container', swiperOpt);
-  }
-
-  function checkSwiperArrow() {
-    var $swiperPrev = $('.swiper-button-prev');
-    var $swiperNext = $('.swiper-button-next');
-    var $swiperContainer = $('.swiper-container');
-    var containerMarginLeft = Number($swiperContainer.css('margin-left').replace('px', ''));
-
-    var left = containerMarginLeft - 20;
-    var right = Number($swiperContainer.css('margin-right').replace('px', '')) - 35;
-
-
-    $swiperPrev.css('left', left);
-    $swiperNext.css('right', right);
-
-    if (window.innerWidth > 960) {
-      $swiperPrev.css('display', 'block');
-      $swiperNext.css('display', 'block');
-    } else {
-      $swiperPrev.css('display', 'none');
-      $swiperNext.css('display', 'none');
-    }
+    $('.slider').slick({
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow: $('.slick-button-prev'),
+      nextArrow: $('.slick-button-next'),
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }]
+    });
   }
 
   function toggleNavDropdown(target, isExpanded = null) {
