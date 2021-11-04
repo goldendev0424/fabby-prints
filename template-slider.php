@@ -48,12 +48,12 @@
 
     .slick-track {
       display: flex;
-      align-items: center;
     }
 
-    .image-frame {
+    .image-frame.slick-slide {
       margin: 0.5em 1em;
-      
+      height: auto;
+      display: flex;
     }
 
     .image-frame img {
@@ -74,6 +74,7 @@
     }
 
     @media only screen and (max-width: 480px) {
+
       .slick-button-prev,
       .slick-button-next {
         display: none;
@@ -91,7 +92,9 @@
   <div class="container">
     <div class="slider">
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name1</p>
@@ -104,7 +107,9 @@
       </div>
 
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/101.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/101.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name2</p>
@@ -117,7 +122,9 @@
       </div>
 
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/102.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/102.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name3</p>
@@ -130,7 +137,9 @@
       </div>
 
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/103.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/103.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name4</p>
@@ -143,7 +152,9 @@
       </div>
 
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name5</p>
@@ -156,7 +167,9 @@
       </div>
 
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name6</p>
@@ -169,7 +182,9 @@
       </div>
 
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name7</p>
@@ -182,7 +197,9 @@
       </div>
 
       <div class="image-frame">
-        <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        <div class="content">
+          <a href="#"><img src="BackUp-B4_D/work3/assets/img/100.jpg"></a>
+        </div>
         <div class="info">
           <div class="info-text">
             <p class="info-title">Name8</p>
