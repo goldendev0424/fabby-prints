@@ -8,11 +8,10 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap">
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/template.css" />
 
   <style>
     .container {
@@ -220,10 +219,10 @@
   <br>
   <br>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/2e71692c1b.js" crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- jquery 3.5.1 -->
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/fontawesome.min.js"></script>
+  <script src="libs/slick-1.8.1/slick/slick.min.js"></script>
 
   <script src="/js/web-model.js"></script>
 </body>

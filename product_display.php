@@ -45,10 +45,9 @@ while($x < $item_list)
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <title>Fabby Prints</title>
 
-  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="libs/html5shiv.js"></script><![endif]-->
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/template.css">
@@ -293,7 +292,6 @@ echo $category_name;
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/2e71692c1b.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="js/common.js"></script>
   <script src="js/web-model.js"></script>
