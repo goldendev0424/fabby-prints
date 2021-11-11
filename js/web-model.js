@@ -51,21 +51,21 @@
       infinite: false,
       speed: 300,
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       prevArrow: $('.slick-button-prev'),
       nextArrow: $('.slick-button-next'),
       responsive: [{
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
