@@ -15,7 +15,7 @@
 
   <style>
     .container {
-      max-width: 100vw;
+      max-width: calc(100vw - 30px);
       padding-inline: 30px;
       position: relative;
     }
